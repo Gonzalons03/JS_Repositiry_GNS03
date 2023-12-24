@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nabla&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Calculadora de Componentes PC</title>
+</head>
+<body>
+    <div id="horaActualContainer" class="text-center mt-2">
+    <span id="horaActual" class="hora-estilo"></span>
+</div>
+    <div class="container mt-5">
+        <div class="jumbotron text-center">
+            <h1 class="display-4">Bienvenido a la Calculadora de Componentes PC</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <header class="mb-4">
+            <section id="app">
+                <div id="sidebar">
+                    <h2 class="t2">Historial de Compras</h2>
+                    <ul id="historialList" class="list-unstyled"></ul>
+                </div>
+            </section>
+        </header>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <label class="t1">Nombre de Usuario:</label>
+                        <input type="text" id="nombreUsuario" class="form-control mb-3" placeholder="Ingrese su nombre">
+            <label class="t1">Procesador:</label>
+            <select class="form-select mb-3">
+                <option value="100">Gama Baja (100 USD)</option>
+                <option value="250">Gama Media (250 USD)</option>
+                <option value="550">Gama Alta (550 USD)</option>
+            </select>
+            <label class="t1">Monitor:</label>
+            <select class="form-select mb-3">
+                <option value="80">Gama Baja (80 USD)</option>
+            <option value="200">Gama Media (200 USD)</option>
+                <option value="450">Gama Alta (450 USD)</option>
+            </select>
+            <label class="t1">Memoria RAM:</label>
+            <select class="form-select mb-3">
+                <option value="40">Gama Baja (40 USD)</option>
+                <option value="120">Gama Media (120 USD)</option>
+                <option value="300">Gama Alta (300 USD)</option>
+            </select>
+
+            <label class="t1">Gabinete:</label>
+            <select class="form-select mb-3">
+                <option value="30">Gama Baja (30 USD)</option>
+                <option value="80">Gama Media (80 USD)</option>
+                <option value="200">Gama Alta (200 USD)</option>
+            </select>
+
+            <label class="t1">Fuente de Poder:</label>
+            <select class="form-select mb-3">
+                <option value="40">Gama Baja (40 USD)</option>
+                <option value="100">Gama Media (100 USD)</option>
+                <option value="180">Gama Alta (180 USD)</option>
+            </select>
+
+            <label class="t1">HDD:</label>
+            <select class="form-select mb-3">
+                <option value="30">Gama Baja (30 USD)</option>
+                <option value="80">Gama Media (80 USD)</option>
+                <option value="150">Gama Alta (150 USD)</option>
+            </select>
+
+            <label class="t1">SSD:</label>
+            <select class="form-select mb-3">
+                <option value="50">Gama Baja (50 USD)</option>
+                <option value="120">Gama Media (120 USD)</option>
+                <option value="250">Gama Alta (250 USD)</option>
+            </select>
+            <label class="t1">SSD M.2:</label>
+            <select class="form-select mb-3">
+                <option value="80">Gama Baja (80 USD)</option>
+                <option value="150">Gama Media (150 USD)</option>
+                <option value="300">Gama Alta (300 USD)</option>
+            </select>
+            <label class="t1">Tarjeta Gráfica:</label>
+            <select class="form-select mb-3">
+                <option value="120">Gama Baja (120 USD)</option>
+                <option value="300">Gama Media (300 USD)</option>
+                <option value="600">Gama Alta (600 USD)</option>
+            </select>
+            <label class="t1">Cooler:</label>
+            <select class="form-select mb-3">
+                <option value="20">Gama Baja (20 USD)</option>
+                <option value="50">Gama Media (50 USD)</option>
+                <option value="100">Gama Alta (100 USD)</option>
+            </select>
+            <label class="t1">Motherboard:</label>
+            <select class="form-select mb-3">
+                <option value="80">Gama Baja (80 USD)</option>
+                <option value="200">Gama Media (200 USD)</option>
+                <option value="400">Gama Alta (400 USD)</option>
+            </select> 
+            </div>
+            <button id="calcularBtn" class="btn btn-success">Calcular Precio de Componente</button>
+            <button id="resetBtn" class="btn btn-primary">Reset Historial</button>
+        </div>
+</Footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>        
+<script src="./js/calculadora.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
